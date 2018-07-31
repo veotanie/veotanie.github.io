@@ -1,0 +1,40 @@
+html{
+    background-color: black
+  }
+  
+@font-face{
+    font-family: 'rondo';
+    src: url("./fonts/ofont.ru_Rondo\ Calligraphic.ttf");
+}
+
+#name{
+    width: 100%;
+}
+
+#intro{
+    padding-left: 30%;
+    width: 100%;
+}
+
+#wish{
+    padding-left: 0%;
+    width: 10%;
+    font-size: 20px;
+}
+div{
+    font-family: 'Helvetica';
+}
+
+#wishes{
+    width: 20%;
+    float: left;
+}
+
+#centerfor{
+    width: 40%;
+    font-size: 30px;
+}
+
+#tonya{
+    opacity: 0;
+}
