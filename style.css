@@ -7,34 +7,31 @@ html{
     src: url("./fonts/ofont.ru_Rondo\ Calligraphic.ttf");
 }
 
-#name{
-    width: 100%;
-}
 
 #intro{
-    padding-left: 30%;
-    width: 100%;
+    padding-left: 40%;
 }
 
-#wish{
-    padding-left: 0%;
-    width: 10%;
-    font-size: 20px;
-}
 div{
     font-family: 'Helvetica';
 }
 
-#wishes{
-    width: 20%;
+#tonyapic{
+    opacity: 0;
+}
+
+.madtohapic{
     float: left;
 }
 
-#centerfor{
-    width: 40%;
+#todealwith{
     font-size: 30px;
+    width: 20%;
 }
 
-#tonya{
-    opacity: 0;
+.madtohawishes{
+    float: left;
+    width: 15%;
+    height: auto;
+    font-size: 30px;
 }

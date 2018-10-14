@@ -1,13 +1,12 @@
 function animate(){
+
     animation = anime({
         targets: '#name',
-        'padding-left': '40%',
+        'padding-left': '50%',
         'font-size': '20px',
         duration: 2000,
         color: 'rgb(255, 255, 255)'
     });
-    console.log('play');
-    animation.play();
 
     intro = anime({
         targets: '#intro',
@@ -16,113 +15,40 @@ function animate(){
         duration: 2000,
         delay: 3000
     });
-    intro.play();
 
-    wish = anime({
-        targets: '#wish',
-        'font-size': '20px',
-        rotate: {
-            value: 360,
-            duration: 1800
-          },
-        color: 'rgb(255,255,255)',
-        duration: 2000,
-        delay: 6000,
-        'padding-left': '0%'
+    wishtitle = anime({
+        targets: "#iwishyou",
+        color: 'rgb(255, 255, 255)',
+        delay: 5000
     });
 
-    firstwish = anime({
-        targets: '#firstwish',
-        'font-size': '20px',
-        color: 'rgb(255,255,255)',
-        duration: 2000,
+    tohawishes = anime({
+        targets: ".madtohawishes li",
+        color: 'rgb(255, 255, 255)',
         delay: 7000,
-        'padding-left': '0%'
+        duration: 3000
     });
 
-    secoundwish = anime({
-        targets: '#secoundwish',
-        'font-size': '20px',
-        color: 'rgb(255,255,255)',
-        duration: 2000,
-        delay: 8000,
-        'padding-left': '0%'
-    });
-
-    thirdwish = anime({
-        targets: '#thirdwish',
-        'font-size': '20px',
-        color: 'rgb(255,255,255)',
-        duration: 2000,
-        delay: 9000,
-        'padding-left': '0%'
-    });
-
-    fourthwish = anime({
-        targets: '#fourthwish',
-        'font-size': '20px',
-        color: 'rgb(255,255,255)',
-        duration: 2000,
-        delay: 10000,
-        'padding-left': '0%'
-    });
-
-    fithwish = anime({
-        targets: '#fithwish',
-        'font-size': '20px',
-        color: 'rgb(255,255,255)',
-        duration: 2000,
-        delay: 11000,
-        'padding-left': '0%'
-    });
-
-    firstwish = anime({
-        targets: '#firstwish',
-        'font-size': '50px',
-        duration: 3000,
-        delay: 13000
-    });
-
-    secoundwish = anime({
-        targets: '#secoundwish',
-        'font-size': '50px',
-        duration: 3000,
-        delay: 13000
-    });
-
-    thirdwish = anime({
-        targets: '#thirdwish',
-        'font-size': '50px',
-        duration: 3000,
-        delay: 13000
-    });
-
-    fourthwish = anime({
-        targets: '#fourthwish',
-        'font-size': '50px',
-        duration: 3000,
-        delay: 13000
-    });
-
-    fithwish = anime({
-        targets: '#fithwish',
-        'font-size': '50px',
-        duration: 3000,
-        delay: 13000
-    });
-
-    toresist = anime({
-        targets: '#centerfor',
-        color: 'rgb(255,255,255)',
-        duration: 2000,
-        delay: 15000
-    })
-
-    tonya = anime({
-        targets: '#tonya',
+    tohapic = anime({
+        targets: "#tonyapic",
         opacity: 1,
+        delay: 10000,
+        duration: 5000
+    });
+
+    todealwith = anime({
+        targets: "#dealwith",
+        delay: 9000,
         duration: 2000,
-        delay: 16000
-    })
+        color: 'rgb(255, 255, 255)'
+    });
+
+
+    var delayInMilliseconds = 20000;
+    setTimeout(function() {
+        element = document.getElementById("wishing");
+        document.body.removeChild(element);
+    }, delayInMilliseconds);
+    
 }
 window.onload = animate;
